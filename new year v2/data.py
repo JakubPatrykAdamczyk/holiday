@@ -1,0 +1,38 @@
+import pygame,math
+from random import*
+
+
+vector2=pygame.math.Vector2
+screen_size_x=800
+screen_size_y=800
+GRAVITY_FIREWORK = vector2(0, 0.3)
+GRAVITY_PARTICLE = vector2(0, 0.07)
+MIN_PARTICLES = 100
+MAX_PARTICLES = 200
+
+EXPLOSION_RADIUS_MIN = 10
+EXPLOSION_RADIUS_MAX = 25
+
+# particle
+PARTICLE_LIFESPAN = 70
+X_SPREAD = 0.8
+Y_SPREAD = 0.8
+PARTICLE_SIZE = 4
+MIN_PARTICLES = 100
+MAX_PARTICLES = 200
+X_WIGGLE_SCALE = 20  # higher -> less wiggle
+Y_WIGGLE_SCALE = 10
+EXPLOSION_RADIUS_MIN = 10
+EXPLOSION_RADIUS_MAX = 25
+COLORFUL = True
+
+# trail
+TRAIL_LIFESPAN = PARTICLE_LIFESPAN / 2
+TRAIL_FREQUENCY = 10  # higher -> less trails
+TRAILS = True
+
+
+# firework
+FIREWORK_SPEED_MIN = 17
+FIREWORK_SPEED_MAX = 20
+FIREWORK_SIZE = 5
